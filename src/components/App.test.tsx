@@ -2,8 +2,6 @@ import React from "react"
 import { render } from "@testing-library/react"
 import renderer from "react-test-renderer"
 import App from "./App"
-import { shallow } from "enzyme"
-import logo from "./logo.svg"
 
 it("renders learn react link", () => {
   const { getByText } = render(<App />)
@@ -14,9 +12,4 @@ it("renders learn react link", () => {
 it("render App component", () => {
   const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
-})
-
-it("render an image", () => {
-  const wrapper = shallow(<App />)
-  wrapper.contains(<img src={logo} className="App-logo" alt="logo" />)
 })
