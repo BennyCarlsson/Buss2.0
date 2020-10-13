@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Tests render Box component 1`] = `
+<div
+  className="sc-bdnylx boKVLG"
+/>
+`;
+
+exports[`Snapshot Tests render Box with children component 1`] = `
+<div
+  className="sc-bdnylx boKVLG"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;
