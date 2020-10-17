@@ -1,9 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot Tests render TimeBox component 1`] = `
+.c0 {
+  border: 2px solid #a3a3a3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 20vh;
+  border-radius: 20px;
+}
+
 <div
-  className="sc-bdnylx boKVLG"
+  className="c0"
 >
-  11:12
+  <p>
+    11:12
+  </p>
 </div>
 `;

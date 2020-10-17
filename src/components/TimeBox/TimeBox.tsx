@@ -5,7 +5,7 @@ interface Props {
 }
 
 const TimeBox: React.FC<Props> = (props) => {
-  return <Box>{props.time}</Box>
+  return <Box><p>{props.time}</p></Box>
 }
 
 export default TimeBox

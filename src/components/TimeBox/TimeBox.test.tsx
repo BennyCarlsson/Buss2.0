@@ -14,6 +14,6 @@ describe("Snapshot Tests", () => {
 describe("TimeBox", () => {
   it("render TimeBox", () => {
     const wrapper = shallow(<TimeBox time="12:12" />)
-    expect(wrapper.contains(<Box>12:12</Box>)).toEqual(true)
+    expect(wrapper.contains(<Box><p>12:12</p></Box>)).toEqual(true)
   })
 })

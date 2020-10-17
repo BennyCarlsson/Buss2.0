@@ -1,8 +1,9 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import {shallow} from 'enzyme'
 import App from "./App"
+import TimeBox from "./TimeBox/TimeBox"
 
-it("render App component", () => {
-  const tree = renderer.create(<App />).toJSON()
-  expect(tree).toMatchSnapshot()
+it("render App with Timebox", () => {
+  const wrapper = shallow(<App/>)
+  expect(wrapper.contains(<TimeBox time="12:00"/>)).toEqual(true)
 })
